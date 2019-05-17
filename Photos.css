@@ -1,0 +1,132 @@
+﻿body{
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left:0px;
+margin-right:0px;
+padding-top:0px;
+background-image:url('new bb.png');
+background-repeat:no-repeat;
+background-position:50% 13%;
+background-color:#C0C0C0
+
+}
+.bannertop{
+background-color: #3CE0D3;
+background-repeat:no-repeat;
+background-image:url('banner2 copy.png');
+background-size: 100% 73%;
+position: relative;
+background-position:0% 0%;
+}
+
+ul{
+ list-style-type:none;
+ margin:0;
+ padding:10px 10px 10px 10px;
+ text-align:center;
+ 	background-color:black;
+}
+
+li{
+	display:inline;
+	border-right:1px solid white;
+	padding:10px 0px 10px 0px;
+	}
+	
+li a{
+	color:white;
+	text-align:center;
+	padding:10px 50px 10px 50px;
+	text-decoration:none;
+}
+
+li a:hover{
+	background-color:red;
+	padding:10px 50px 10px 50px;
+}
+
+li:last-child{
+	border-right:none;
+}
+
+
+.footer {
+   background-color: black;
+   width:auto;
+   height:auto;
+   padding:1% 0% 0% 0%;
+}
+
+.container {
+    position: relative; 
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+
+.container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+
+.footer {
+	position: 5px 40px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    padding-left: 100px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

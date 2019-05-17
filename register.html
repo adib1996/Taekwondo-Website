@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="homepagestyle.css"/>
+<link rel="stylesheet" type="text/css" href="register.css"/>
+
+<script type="text/javascript">
+	//Validation Function
+	function validateregister() {
+		var firstname = document.forms["regform"]["firstname"].value;
+		var lastname = document.forms["regform"]["lastname"].value;
+		var intakecode = document.forms["regform"]["intakecode"].value;
+		var phonenumber = document.forms["regform"]["phonenumber"].value;
+		var emailaddress = document.forms["regform"]["emailaddress"].value;
+		var tpnumber = document.forms["regform"]["tpnumber"].value;
+		//Radio buttons and Select boxes
+		var gendermale = document.getElementById("radiogendermale");
+		var genderfemale = document.getElementById("radiogenderfemale");
+		var beginner = document.getElementById("radbeginner");
+		var intermediate = document.getElementById("radintermediate");
+		var expert = document.getElementById("radexpert");
+		
+		//First name validation
+		if (firstname == "") {
+			alert("Please fill out your first name");
+				return false;
+		} 
+		//Last name validation
+		  else if (lastname == "") {
+			alert("Please fill out your last name");
+				return false;
+		} 
+		//Education level validation
+		  else if (regform.educationlevel.selectedIndex == 0) {
+		  	alert("Please select your Education Level");
+		  		return false;
+		} 	
+		//Intake code validation	
+		  else if (intakecode == "") {
+			alert("Please fill out your Intake Code");
+				return false;
+		} 
+		//TP Number validatiion
+		  else if (tpnumber == "") {
+		  	alert("Fill out TP Number");
+		  		return false;
+		}
+		//Phone number validation
+		  else if (phonenumber == "") {
+		  	alert("Fill out phone number");
+		  		return false;
+		}
+		//Email address validation
+		  else if (emailaddress == "") {
+		  	alert("Fill out E-mail address");
+		  		return false;
+		}
+		//Gender validation
+		  else if (radiogendermale.checked == false && radiogenderfemale.checked == false) {
+		  	alert("Select a gender");
+		  		return false;
+		}
+		//Proficiency level validation	
+		  else if (radbeginner.checked == false && radintermediate.checked == false && radexpert.checked == false) {
+		  	alert("Select your proficiency level");
+		  		return false;
+		}
+		  else {
+		  	alert("Registration Complete!");
+		  		return true;
+		}		
+}		
+</script>
+
+<title>Register</title>
+</head>
+
+<body>
+<div class="bannertop">
+	<a href="default.html"><img style="position:absolute; top:25px; left: 1%; width:40px; height:40px" src="home.png" alt="Home button"/></a>
+	<img style="position:absolute; top:5px; left: 7%; width:86px; height:86px" src="apu_taekwondo_logo_360.png" alt="APU Logo"/>
+	<img style="position:absolute; top:5px; left: 15%; width:86px; height:86px" src="pirmajaya_logo_360.png" alt="PirmaJaya Logo"/>
+	<img style="position:absolute; top:12px; left: 23%; width:120px; height:74px" src="World-Taekwondo-small.png" alt="WTF Logo"/>
+	<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding: 0% 0% 0% 35%;">Asia Pacific University<br/></span>
+	<span style="font-size:64px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding: 0% 0% 0% 35%;">Taekwondo Club</span>&nbsp;
+	
+<div>
+<ul>
+	<li><a href="aboutus.html">About Us</a></li>
+	<li><a href="achievements2.html">Achievements</a></li>
+	<li><a href="how_to_join.html">How to join</a></li>
+	<li><a href="rules.html">Rules</a></li>
+	<li><a href="News.html">News &amp; Events</a></li>
+	<li><a href="photos.html">Photos</a></li>
+	<li style="float:right;"><a href="Login.html">Login</a></li>
+</ul>
+</div>
+</div>
+
+<div style="background-color:gray;  text-align:center; vertical-align: middle; padding:20px 47px;font-family:Arial, Helvetica, sans-serif ; font-size:medium">
+<h1>Register here!</h1>
+
+<p>Please fill out all your details below; we'll be in touch</p>
+<hr/>
+</div>
+
+<div style="background-color:silver;  text-align:center; vertical-align: middle; padding:20px 47px;font-family:Arial, Helvetica, sans-serif ; font-size:medium">
+<form name="regform" action="#" onsubmit="return validateregister()" method="post">
+  
+  <div class="registerdiv">
+  	<label for="firstname"><b>First Name</b></label><br/>
+  	<input type="text" name="firstname" id="firstname"/>
+  </div>
+
+  <div class="registerdiv">
+  	<label for="lastname"><b>Last Name</b></label><br/>
+ 	<input type="text" name="lastname" id="lastname"/>
+  </div>
+  
+  <br/>
+  
+  <div class="registerdiv">
+  	<label for="educationlevel"><b>Education Level<br/></b></label><br/>
+  	<select name="educationlevel" id="educationlevel">
+  		<option value="" disabled="disabled" selected="selected">Choose One</option>
+  		<option value="aplc">APLC Course</option>
+  		<option value="cert">Certificate</option>
+  		<option value="diploma">Diploma</option>
+  		<option value="foundation">Foundation</option>
+  		<option value="degree">Degree</option>
+  		<option value="masters">Masters</option>
+  		<option value="phd">PhD</option>
+  		<option value="lect">Lecturer</option>
+  	</select>
+  </div>
+  
+  <br/><br/>
+  
+  <div class="registerdiv">
+  	<label for="tpnumber"><b>TP Number</b></label><br/>
+  	<input type="text" name="tpno" id="tpnumber" maxlength="8"/>
+  </div>
+
+  <div class="registerdiv">
+  	<label for="intakecode"><b>Intake Code</b></label><br/>
+  	<input type="text" name="intakeco" id="intakecode"/>
+  </div>
+  
+  <br/>
+  
+  <div class="registerdiv">
+  	<label for="phonenumber"><b>Phone Number</b></label><br/>
+  	<input type="text" name="phone" id="phonenumber"/>
+  </div>
+ 
+  <div class="registerdiv">
+  	<label for="emailaddress"><b>E-mail Address</b></label><br/>
+  	<input type="text" name="email" id="emailaddress"/>
+  </div>
+  
+  <br/>
+  
+  <div class="registerdiv">
+    <label for="gender"><b>Gender</b></label>
+  	<input type="radio" name="gender" value="male" id="radiogendermale"/><label>Male</label>
+  	<input type="radio" name="gender" value="female" id="radiogenderfemale"/><label>Female</label>
+  </div> 
+  
+  <br/><br/>
+  
+  <div class="registerdiv">
+  	<label for="proflevel"><b>Taekwondo Proficiency Level</b></label><br/>
+  	<input type="radio" name="proflevel" value="beginner" id="radbeginner"/><label>Junior (White - Green 2)</label>
+  	<input type="radio" name="proflevel" value="intermediate" id="radintermediate"/><label>Intermediate (Blue 1 - Red 2)</label>
+  	<input type="radio" name="proflevel" value="expert" id="radexpert"/><label>Expert (Black Belt)</label>
+  </div>
+  
+  <br/><br/>
+  
+  <div>
+ 	 <label for="provlevel" style="vertical-align:top"><b>Previous experience in Taekwondo (Optional)</b></label><br/><br/>
+ 	 <textarea name="experience" rows="5" cols="40"></textarea>
+  </div>
+  
+  <br/><br/>
+  
+  <button type="submit" class="registerbtn">Register</button>
+</form> 
+</div>
+
+<div class="footer"> 
+<center><span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px ; color:white">Asia Pacific University</span> <br/>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Address: Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur,<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white"> Wilayah Persekutuan Kuala Lumpur<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Phone: 03-8996 1000<br/></span>
+<img src="apu_taekwondo_logo_360.png" alt="image"/></center>
+</div>
+
+
+</body>
+</html>

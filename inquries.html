@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" type="text/css" href="inquiries.css"/>
+<link rel="stylesheet" type="text/css" href="homepagestyle.css"/>
+<link rel="stylesheet" type="text/css" href="register.css"/>
+
+<title>Inquiries</title>
+
+<script type="text/javascript">
+	
+	//Inquiry form Validation
+	function ValidateInquiries() {
+		var firstname = document.forms["inquiryform"]["firstname"].value;
+		var lastname = document.forms["inquiryform"]["lastname"].value;
+		var intakecode = document.forms["inquiryform"]["intakecode"].value;
+		var phonenumber = document.forms["inquiryform"]["phonenumber"].value;
+		var emailaddress = document.forms["inquiryform"]["emailaddress"].value;
+		var tpnumber = document.forms["inquiryform"]["tpnumber"].value;
+		var inquiryinfo = document.forms["inquiryform"]["inquiryinfo"].value;
+		
+		//First Name Validation
+		if (firstname == "") {
+			alert("Please fill out your first name");
+				return false;
+		} 
+		//Last name validation
+		  else if (lastname == "") {
+			alert("Please fill out your last name");
+				return false;
+		} 
+		//Inquiry type validation
+		  else if (inquiryform.inqtype.selectedIndex == 0) {
+		  	alert("Please select your type of Inquiry");
+		  		return false;
+		} 	
+		//Intake code validation	
+		  else if (intakecode == "") {
+			alert("Please fill out your Intake Code");
+				return false;
+		} 
+		//TP Number validatiion
+		  else if (tpnumber == "") {
+		  	alert("Fill out TP Number");
+		  		return false;
+		}
+		//Phone number validation
+		  else if (phonenumber == "") {
+		  	alert("Fill out phone number");
+		  		return false;
+		}
+		//Email address validation
+		  else if (emailaddress == "") {
+		  	alert("Fill out E-mail address");
+		  		return false;
+		}
+		//Inquiry information validation
+		  else if (inquiryinfo == "") {
+		  	alert("Fill out inquiry details")
+				return false;
+		}
+		 else {
+		  	alert("Submission Complete! We'll get in touch soon");
+		  		return true;
+		}	
+}
+	
+</script>
+</head>
+
+<body>
+<div class="bannertop">
+	<a href="default.html"><img style="position:absolute; top:25px; left: 1%; width:40px; height:40px" src="home.png" alt="Home button"/></a>
+	<img style="position:absolute; top:5px; left: 7%; width:86px; height:86px" src="apu_taekwondo_logo_360.png" alt="APU Logo"/>
+	<img style="position:absolute; top:5px; left: 15%; width:86px; height:86px" src="pirmajaya_logo_360.png" alt="PirmaJaya Logo"/>
+	<img style="position:absolute; top:12px; left: 23%; width:120px; height:74px" src="World-Taekwondo-small.png" alt="WTF Logo"/>
+	<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding: 0% 0% 0% 35%;">Asia Pacific University<br/></span>
+	<span style="font-size:64px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding: 0% 0% 0% 35%;">Taekwondo Club</span>&nbsp;
+	
+<div>
+<ul>
+	<li><a href="aboutus.html">About Us</a></li>
+	<li><a href="achievements2.html">Achievements</a></li>
+	<li><a href="how_to_join.html">How to join</a></li>
+	<li><a href="rules.html">Rules</a></li>
+	<li><a href="News.html">News &amp; Events</a></li>
+	<li><a href="photos.html">Photos</a></li>
+	<li style="float:right;"><a href="Login.html">Login</a></li>
+
+</ul>
+</div>
+</div>
+
+<div style="background-color:gray;  text-align:center; vertical-align: middle; padding:20px 47px;font-family:Arial, Helvetica, sans-serif ; font-size:medium">
+
+<h1>Inquire from us!</h1>
+
+<p>Please tell us what do you want to know about our club; we'll be in touch</p>
+<hr/>
+</div>
+
+<div style="background-color:silver;  text-align:center; vertical-align: middle; padding:20px 47px;font-family:Arial, Helvetica, sans-serif ; font-size:medium">
+<form name="inquiryform" action="mailto:infes@gmail.com" 
+onsubmit="return ValidateInquiries()" method="post">
+  
+  <div class="divinquiries">
+  	<label for="firstname"><b>First Name</b></label><br/>
+ 	<input type="text" name="firstname" id="firstname"/>
+  </div>
+  
+  
+  <div class="divinquiries">
+  	<label for="lastname"><b>Last Name</b></label><br/>
+  	<input type="text" name="lastname" id="lastname"/>
+  </div>
+  
+  <br/>
+  
+  <div class="divinquiries">
+  	<label for="tpnumber"><b>TP Number</b></label><br/>
+  	<input type="text" name="tpno" id="tpnumber" maxlength="8"/>
+  </div>
+
+  <div class="divinquiries">
+  	<label for="intakecode"><b>Intake Code</b></label><br/>
+  	<input type="text" name="intakecode" id="intakecode"/>
+  </div>
+  
+  <br/>
+  
+  <div class="divinquiries">
+  	<label for="phonenumber"><b>Phone Number</b></label><br/>
+  	<input type="text" name="phonenumber" id="phonenumber"/>
+  </div>  
+  
+  <div class="divinquiries">
+  	<label for="emailaddress"><b>E-mail Address</b></label><br/>
+  	<input type="text" name="emailaddress" id="emailaddress"/>
+  </div>
+  
+  <br/>
+  
+  <div class="divinquiries">
+  	<label for="inquirytype"><b>What would you like to inquire about?</b></label><br/><br/>
+  	<select name="inquirytype" id="inqtype">
+  		<option value="" disabled="disabled" selected="selected">Choose One</option>
+  		<option value="ProgrammeInfo">Programme Information</option>
+  		<option value="Fees">Fees</option>
+  		<option value="TrainingSchedule">Training Schedule</option>
+  		<option value="TrainingVenues">Training Venues</option>
+  		<option value="TypesofTraining">Types of Training</option>
+  		<option value="Other">Others</option>
+  	</select>
+  </div>
+  
+  <br/><br/>
+  
+	<div class="divinquiries">
+  		<textarea name="inquirybox" id="inquiryinfo" rows="5" cols="40"></textarea>
+  	</div>
+ 
+  <br/><br/>
+ 
+  <button type="submit" class="submitbtn">Submit</button>
+</form> 
+</div>
+<div class="footer"> 
+<center><span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px ; color:white">Asia Pacific University</span> <br/>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Address: Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur,<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white"> Wilayah Persekutuan Kuala Lumpur<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Phone: 03-8996 1000<br/></span>
+<img src="apu_taekwondo_logo_360.png" alt="image"/></center>
+</div>
+
+</body>
+
+</html>

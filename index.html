@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="homepagestyle.css"/>
+<link rel="stylesheet" type="text/css" href="homepage_slideshow.css"/>
+<title>APU Taekwondo Club - Homepage</title>
+</head>
+
+<body>
+
+<div class="bannertop">
+	<img style="position:absolute; top:5px; left: 7%; width:86px; height:86px" src="apu_taekwondo_logo_360.png" alt="APU Logo"/>
+	<img style="position:absolute; top:5px; left: 15%; width:86px; height:86px" src="pirmajaya_logo_360.png" alt="PirmaJaya Logo"/>
+	<img style="position:absolute; top:12px; left: 23%; width:120px; height:74px" src="World-Taekwondo-small.png" alt="WTF Logo"/>
+	<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding: 0% 0% 0% 35%;">Asia Pacific University<br/></span>
+	<span style="font-size:64px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding: 0% 0% 0% 35%;">Taekwondo Club</span>&nbsp;
+<div>
+<ul>
+	<li><a href="aboutus.html">About Us</a></li>
+	<li><a href="achievements2.html">Achievements</a></li>
+	<li><a href="how_to_join.html">How to join</a></li>
+	<li><a href="rules.html">Rules</a></li>
+	<li><a href="News.html">News &amp; Events</a></li>
+	<li><a href="photos.html">Photos</a></li>
+	<li style="float:right;"><a href="Login.html">Login</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container" style="left: 0px; top: 0px">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="slider images/1.jpg" style="width:100%" alt="image"/>
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="slider images/2.jpg" style="width:100%" alt="image"/>
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="slider images/3.jpg" style="width:100%" alt="image"/>
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="slider images/4.jpg" style="width:100%" alt="image"/>
+    <div class="text"></div>
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="slider images/5.jpg" style="width:100%" alt="image"/>
+    <div class="text"></div>
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="slider images/6.jpg" style="width:100%" alt="image"/>
+    <div class="text"></div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+&nbsp;
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br/><br/><br/>
+<div style="background-color:gray;height:30px"></div>
+ <div class="row">
+  <div class="column">
+    <div class="card" style="background-color:#6d6f72">
+      <img src="newspics/news1.jpg" alt="Jane" style="width:100%"/>
+      <div class="container">
+        <h2>Who are we?</h2>
+        <p class="title">Know more about our club and its history!</p>
+        <p>Our Mission, Vision and Objectives as a club will inspire you</p>
+        <p><a style="text-decoration:none;"href="aboutus.html" class="button">About us</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="background-color:#6d6f72">
+      <img src="newspics/news2.jpg" alt="Mike" style="width:100%"/>
+      <div class="container">
+        <h2>How to join</h2>
+        <p class="title">Be part of us!</p>
+        <p>Join our growing family and experience the benefits of our club</p>
+        <p><a href="how_to_join.html" style="text-decoration: none;" class="button">Join us</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="background-color:#6d6f72">
+      <img src="newspics/news3.jpg" alt="John" style="width:100%"/>
+      <div class="container">
+        <h2>News and Events</h2>
+        <p class="title">Get the lastest info here!</p>
+        <p>Stay informed</p>
+        <p>Or contact us at : aputaekwondoclub@gmail.com</p>
+        <p><a style="text-decoration:none;" href="News.html" class="button">See latest news</a></p>
+      </div>
+    </div>
+  </div>
+  <br/>
+  
+  <div class="column">
+    <div class="card" style="background-color:#6d6f72">
+      <img src="newspics/news4.jpg" alt="Mike" style="width:100%"/>
+      <div class="container">
+        <h2>Rules</h2>
+        <p class="title">Know the rules before sparring with us!</p>
+        <p>Discipline paves way to understanding and victory</p>
+        <p><a style="text-decoration:none;" href="rules.html" class="button">View Our Rules</a></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card" style="background-color:#6d6f72">
+      <img src="newspics/news5.jpg" alt="Mike" style="width:100%"/>
+      <div class="container">
+        <h2>Inquiries</h2>
+        <p class="title">Any questions? Ask away!</p>
+        <p>We'll respond to your questions ASAP, so no worries</p>
+        <p><a style="text-decoration:none;" href="inquries.html" class="button">Inquire from us</a></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card" style="background-color:#6d6f72">
+      <img src="newspics/news6.jpg" alt="Mike" style="width:100%"/>
+      <div class="container">
+        <h2>Feedback</h2>
+        <p class="title">Rate us to make our club better!</p>
+        <p>Suggestions will be highly appreciated, as every feedback counts!</p>
+        <p><a style="text-decoration:none;" href="feedback.html" class="button">Give Feedback</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="footer"> 
+<center><span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px ; color:white">Asia Pacific University</span> <br/>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Address: Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur,<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white"> Wilayah Persekutuan Kuala Lumpur<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Phone: 03-8996 1000<br/></span>
+<img src="apu_taekwondo_logo_360.png" alt="image"/></center>
+</div>
+</body>
+
+</html>
+

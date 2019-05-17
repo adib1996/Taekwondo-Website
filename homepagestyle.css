@@ -1,0 +1,76 @@
+﻿body{
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left:0px;
+margin-right:0px;
+padding-top:0px;
+background-image:url('new bb.png');
+background-repeat:no-repeat;
+background-position:50% 13%;
+background-color:#C0C0C0
+
+}
+.bannertop{
+    background-color: #3CE0D3;
+    background-repeat:no-repeat;
+    background-image:url('banner2 copy.png');
+    background-size: 100% 73%;
+    position: relative;
+    background-position:0% 0%;
+}
+ul{
+ list-style-type:none;
+ margin:0;
+ padding:10px 10px 10px 10px;
+ text-align:center;
+ 	background-color:black;
+}
+
+li{
+	display:inline;
+	border-right:1px solid white;
+	padding:10px 0px 10px 0px;
+	}
+	
+li a{
+	color:white;
+	text-align:center;
+	padding:10px 50px 10px 50px;
+	text-decoration:none;
+}
+
+li a:hover{
+	background-color:red;
+	padding:10px 50px 10px 50px;
+}
+
+li:last-child{
+	border-right:none;
+}
+
+
+.footer {
+   background-color: black;
+   width:auto;
+   height:auto;
+   padding:1% 0% 0% 0%;
+}
+
+.container {
+    position: relative; 
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+
+.container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 95%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+
+.footer {
+	position: 5px 40px;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="feedback.css"/>
+<link rel="stylesheet" type="text/css" href="homepagestyle.css"/>
+<title>Feedback</title>
+<script type="text/javascript">
+		function validatefeedback() {
+				//Variable declarations
+				var firstname = document.forms["feedbackform"]["firstname"].value;
+				var lastname = document.forms["feedbackform"]["lastname"].value;
+				var intakecode = document.forms["feedbackform"]["intakecode"].value;
+				var phonenumber = document.forms["feedbackform"]["phonenumber"].value;
+				var emailaddress = document.forms["feedbackform"]["emailaddress"].value;
+				var tpnumber = document.forms["feedbackform"]["tpnumber"].value;
+
+				//First Name
+				if (firstname == "") {
+					alert("Please fill out your first name");
+						return false;
+				}
+				//Last Name
+				else if (lastname == "") {
+					alert("Please fill out your last name");
+						return false;
+				}
+				//Intake Code
+				else if (intakecode == "") {
+					alert("Please fill out your intake code");
+						return false;
+				}
+				//Phone Number
+				else if (phonenumber == "") {
+					alert("Please fill our your phone number!");
+						return false;
+				}
+				//E-Mail Address
+				else if (emailaddress == "") {
+					alert("Please fill out your e-mail address!");
+						return false;
+				}
+				//Education Level
+				else if (feedbackform.educationlevel.selectedIndex == 0) {
+		  			alert("Please select your Education Level");
+		  				return false;
+				} 	
+				//TP Number
+				else if (tpnumber == "") {
+					alert("Please fill our your TP Number!");
+						return false;
+				}
+				//How did you hear from us - Select Box Validator
+				else if (feedbackform.howknow.selectedIndex == 0) {
+		  			alert("Please tell us where did you hear about our club!");
+		  				return false;
+				} 
+				//Training Environment Quality Rating Validator
+				else if (rateenvironmentpoor.checked == false && rateenvironmentborderline.checked == false && rateenvironmentsatisfactory.checked == false
+						 && rateenvironmentgood.checked == false && rateenvironmentoutstanding.checked == false) {
+						 	alert("Please rate the quality of our training environment!");
+						 		return false;
+				}
+				//Coaches' Quality
+				else if (ratecoachespoor.checked == false && ratecoachesborderline.checked == false && ratecoachessatisfactory.checked == false 
+						 && ratecoachesgood.checked == false && ratecoachesoutstanding.checked == false) {
+						 	alert("Please rate the quality of our Coaches!");
+						 		return false;
+				}
+				//Equipment Quality
+				else if (rateequipmentpoor.checked == false && rateequipmentborderline.checked == false && rateequipmentsatisfactory.checked == false
+						 && rateequipmentgood.checked == false && rateequipmentoutstanding.checked == false) {
+						 	alert("Please rate the quality of our Equipment!");
+						 		return false;
+				}
+				//Training Session Quality
+				else if (ratesessionpoor.checked == false && ratesessionborderline.checked == false && ratesessionsatisfactory.checked == false
+						 && ratesessiongood.checked == false && ratesessionoutstanding.checked == false) {
+						 	alert("Please rate the quality of our Sessions!");
+						 		return false;
+				}
+				//Timing and Location Quality
+				else if (ratelocationpoor.checked == false && ratelocationborderline.checked == false && ratelocationsatisfactory.checked == false
+						 && ratelocationgood.checked == false && ratelocationoutstanding.checked == false) {
+						 	alert("Please rate the timing and location of our sessions!");
+						 		return false;
+				}
+				//Price Validation
+				else if (ratepricepoor.checked == false && ratepriceborderline.checked == false && ratepricesatisfactory.checked == false
+						 && ratepricegood.checked == false && ratepriceoutstanding.checked == false) {
+						 	alert("Please rate our prices!");
+						 		return false;
+				}
+				//All Validations Passed
+				else {
+					alert("Thank you for the feedback!");
+						return true;
+				}			 			 			 			 					 			 		
+}
+</script>
+
+</head>
+<body>
+
+<div class="bannertop">
+	<a href="default.html"><img style="position:absolute; top:25px; left: 1%; width:40px; height:40px" src="home.png" alt="Home button"/></a>
+	<img style="position:absolute; top:5px; left: 7%; width:86px; height:86px" src="apu_taekwondo_logo_360.png" alt="APU Logo"/>
+	<img style="position:absolute; top:5px; left: 15%; width:86px; height:86px" src="pirmajaya_logo_360.png" alt="PirmaJaya Logo"/>
+	<img style="position:absolute; top:12px; left: 23%; width:120px; height:74px" src="World-Taekwondo-small.png" alt="WTF Logo"/>
+	<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding: 0% 0% 0% 35%;">Asia Pacific University<br/></span>
+	<span style="font-size:64px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding: 0% 0% 0% 35%;">Taekwondo Club</span>&nbsp;
+	
+<div>
+<ul>
+	<li><a href="aboutus.html">About Us</a></li>
+	<li><a href="achievements2.html">Achievements</a></li>
+	<li><a href="how_to_join.html">How to join</a></li>
+	<li><a href="rules.html">Rules</a></li>
+	<li><a href="News.html">News &amp; Events</a></li>
+	<li><a href="photos.html">Photos</a></li>
+	<li style="float:right;"><a href="Login.html">Login</a></li>
+
+</ul>
+</div>
+</div>
+
+
+<div style="background-color:gray;  text-align:center; vertical-align: middle; padding:20px 47px;font-family:Arial, Helvetica, sans-serif ; font-size:medium">
+<h1>Give your feedback here!</h1>
+
+<p>We'd really love to hear your opinion!</p>
+<hr/>
+</div>
+
+<div style="background-color:silver;  text-align:center; vertical-align: middle; padding:20px 47px;font-family:Arial, Helvetica, sans-serif ; font-size:medium">
+
+<form name="feedbackform" action="#" 
+onsubmit="return validatefeedback()" method="post">
+
+  <div class="feedbackdiv"">
+  	 <label for="firstname"><b>First Name</b></label>
+  	 <input type="text" name="firstname" id="firstname"/>
+  </div>
+  
+  <div class="feedbackdiv">
+  	<label for="lastname"><b>Last Name</b></label>
+ 	<input type="text" name="lastname" id="lastname"/>
+  </div>
+	
+	<br/>
+	
+  <div class="feedbackdiv">
+  	<label for="tpnumber"><b>TP Number</b></label>
+  	<input type="text" name="tpno" id="tpnumber" maxlength="8"/>
+  </div>
+
+  <div class="feedbackdiv">
+  	<label for="emailaddress"><b>E-mail Address</b></label><br/>
+  	<input type="text" name="email" id="emailaddress"/>
+  </div>
+
+	<br/>
+
+  <div class="feedbackdiv">
+  	<label for="educationlevel"><b>Education Level<br/></b></label><br/>
+  	<select name="educationlevel" id="educationlevel">
+  		<option value="" disabled="disabled" selected="selected">Choose One</option>
+  		<option value="aplc">APLC Course</option>
+  		<option value="cert">Certificate</option>
+  		<option value="diploma">Diploma</option>
+  		<option value="foundation">Foundation</option>
+  		<option value="degree">Degree</option>
+  		<option value="masters">Masters</option>
+  		<option value="phd">PhD</option>
+  		<option value="lect">Lecturer</option>
+  	</select>
+  </div>
+
+	<br/><br/>
+
+  <div class="feedbackdiv">
+  	<label for="intakecode"><b>Intake Code</b></label><br/>
+  	<input type="text" name="intakeco" id="intakecode"/>
+  </div>
+  
+  <div class="feedbackdiv">
+  	<label for="phonenumber"><b>Phone Number</b></label><br/>
+  	<input type="text" name="phone" id="phonenumber"/>
+  </div>
+ 
+ 	<br/><br/>
+ 
+  <div class="feedbackdiv">
+  	<label for="howyouknow"><b>How did you know about our club?<br/></b></label><br/>
+  	<select name="howyouknow" id="howknow">
+  		<option value="" disabled="disabled" selected="selected">Choose One</option>
+  		<option value="friends">Friends</option>
+  		<option value="family">Family</option>
+  		<option value="classmates">Classmates</option>
+  		<option value="lecturers">Lecturers</option>
+  		<option value="socialmedia">Social Media</option>
+  		<option value="newspapers">Newspaper</option>
+  		<option value="others">Others</option>
+  	</select>
+  </div>
+  
+  <br/><br/>
+  
+   <div class="feedbackdiv">
+    <label for="environmentrating"><b>How would you rate the quality of our training environment?</b></label><br/><br/>
+  	<input type="radio" name="environmentrating" value="poor" id="rateenvironmentpoor"/><label>Poor</label>
+  	<input type="radio" name="environmentrating" value="borderline" id="rateenvironmentborderline"/><label>Borderline</label>
+  	<input type="radio" name="environmentrating" value="satisfactory" id="rateenvironmentsatisfactory"/><label>Satisfactory</label>
+  	<input type="radio" name="environmentrating" value="good" id="rateenvironmentgood"/><label>Good</label>
+  	<input type="radio" name="environmentrating" value="outstanding" id="rateenvironmentoutstanding"/><label>Outstanding</label>
+  </div> 
+  
+  <br/><br/>
+  
+  <div class="feedbackdiv">
+    <label for="coachrating"><b>How would you rate the quality of our coaches?</b></label><br/><br/>
+  	<input type="radio" name="coachrating" value="poor" id="ratecoachespoor"/><label>Poor</label>
+  	<input type="radio" name="coachrating" value="borderline" id="ratecoachesborderline"/><label>Borderline</label>
+  	<input type="radio" name="coachrating" value="satisfactory" id="ratecoachessatisfactory"/><label>Satisfactory</label>
+  	<input type="radio" name="coachrating" value="good" id="ratecoachesgood"/><label>Good</label>
+  	<input type="radio" name="coachrating" value="outstanding" id="ratecoachesoutstanding"/><label>Outstanding</label>
+  </div> 
+
+   <br/><br/>
+  
+  <div class="feedbackdiv">
+    <label for="equipmentrating"><b>How would you rate the quality of our equipment?</b></label><br/><br/>
+  	<input type="radio" name="equipmentrating" value="poor" id="rateequipmentpoor"/><label>Poor</label>
+  	<input type="radio" name="equipmentrating" value="borderline" id="rateequipmentborderline"/><label>Borderline</label>
+  	<input type="radio" name="equipmentrating" value="satisfactory" id="rateequipmentsatisfactory"/><label>Satisfactory</label>
+  	<input type="radio" name="equipmentrating" value="good" id="rateequipmentgood"/><label>Good</label>
+  	<input type="radio" name="equipmentrating" value="outstanding" id="rateequipmentoutstanding"/><label>Outstanding</label>
+  </div> 
+  
+  <br/><br/>
+  
+  <div class="feedbackdiv">
+    <label for="sessionrating"><b>How would you rate the quality of our training sessions?</b></label><br/><br/>
+  	<input type="radio" name="sessionrating" value="poor" id="ratesessionpoor"/><label>Poor</label>
+  	<input type="radio" name="sessionrating" value="borderline" id="ratesessionborderline"/><label>Borderline</label>
+  	<input type="radio" name="sessionrating" value="satisfactory" id="ratesessionsatisfactory"/><label>Satisfactory</label>
+  	<input type="radio" name="sessionrating" value="good" id="ratesessiongood"/><label>Good</label>
+  	<input type="radio" name="sessionrating" value="outstanding" id="ratesessionoutstanding"/><label>Outstanding</label>
+  </div> 
+
+  <br/><br/>
+  
+  <div class="feedbackdiv">
+    <label for="locationrating"><b>How would you rate the timing and location of our training sessions?</b></label><br/><br/>
+  	<input type="radio" name="locationrating" value="poor" id="ratelocationpoor"/><label>Poor</label>
+  	<input type="radio" name="locationrating" value="borderline" id="ratelocationborderline"/><label>Borderline</label>
+  	<input type="radio" name="locationrating" value="satisfactory" id="ratelocationsatisfactory"/><label>Satisfactory</label>
+  	<input type="radio" name="locationrating" value="good" id="ratelocationgood"/><label>Good</label>
+  	<input type="radio" name="locationrating" value="outstanding" id="ratelocationoutstanding"/><label>Outstanding</label>
+  </div> 
+  
+  <br/><br/>
+  
+  <div class="feedbackdiv">
+    <label for="pricerating"><b>How would you rate our prices?</b></label><br/><br/>
+  	<input type="radio" name="pricerating" value="poor" id="ratepricepoor"/><label>Poor</label>
+  	<input type="radio" name="pricerating" value="borderline" id="ratepriceborderline"/><label>Borderline</label>
+  	<input type="radio" name="pricerating" value="satisfactory" id="ratepricesatisfactory"/><label>Satisfactory</label>
+  	<input type="radio" name="pricerating" value="good" id="ratepricegood"/><label>Good</label>
+  	<input type="radio" name="pricerating" value="outstanding" id="ratepriceoutstanding"/><label>Outstanding</label>
+  </div> 
+
+	<br/><br/>
+
+  <div class="feedbackdiv">
+ 	 <label for="furtherfeedback" style="vertical-align:top"><b>Suggestions and Improvements (Optional)</b></label><br/><br/>
+ 	 <textarea name="experience" rows="5" cols="40"></textarea>
+  </div>
+
+	<br/><br/>
+
+  <button type="submit" class="submitbtn">Submit</button>
+</form>
+</div>
+
+<div class="footer"> 
+<center><span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px ; color:white">Asia Pacific University</span> <br/>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Address: Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur,<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white"> Wilayah Persekutuan Kuala Lumpur<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Phone: 03-8996 1000<br/></span>
+<img src="apu_taekwondo_logo_360.png" alt="image"/></center>
+</div>
+
+<!--Environment, Coaches. Training Quality/Effectiveness, Standard of Equipment, Training Location and Schedules, Pricing  -->
+</body>
+
+</html>

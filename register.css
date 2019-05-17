@@ -1,0 +1,55 @@
+﻿.registerdiv {
+	display: inline-block;
+}
+
+.group {
+	display:inline-block;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+b {
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1{
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif
+}
+
+p{
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif
+}
+
+
+.registerbtn {
+    background-color: #8c8c8c;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+.registerbtn:hover {
+    opacity: 1;
+    background-color: #ffcc80;
+}
+
+textarea{
+	 resize: none
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+    background-color:#e0e0d1;
+}
+
+.value_error{
+	color:#FF1F1F;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="photos.css"/>
+<title>Photos</title>
+</head>
+
+<body>
+<div class="bannertop">
+	<a href="default.html"><img style="position:absolute; top:25px; left: 1%; width:40px; height:40px" src="home.png" alt="Home button"/></a>
+	<img style="position:absolute; top:5px; left: 7%; width:86px; height:86px" src="apu_taekwondo_logo_360.png" alt="APU Logo"/>
+	<img style="position:absolute; top:5px; left: 15%; width:86px; height:86px" src="pirmajaya_logo_360.png" alt="PirmaJaya Logo"/>
+	<img style="position:absolute; top:12px; left: 23%; width:120px; height:74px" src="World-Taekwondo-small.png" alt="WTF Logo"/>
+	<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding: 0% 0% 0% 35%;">Asia Pacific University<br/></span>
+	<span style="font-size:64px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding: 0% 0% 0% 35%;">Taekwondo Club</span>&nbsp;
+	
+<div>
+<ul>
+	<li><a href="aboutus.html">About Us</a></li>
+	<li><a href="achievements2.html">Achievements</a></li>
+	<li><a href="how_to_join.html">How to join</a></li>
+	<li><a href="rules.html">Rules</a></li>
+	<li><a href="News.html">News &amp; Events</a></li>
+	<li><a href="photos.html">Photos</a></li>
+		<li style="float:right;"><a href="Login.html">Login</a></li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+ <button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="four()">4</button>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "100%";
+    }
+}
+
+// Two images side by side
+function two() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "50%";
+    }
+}
+
+// Four images side by side
+function four() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "25%";
+    }
+}
+</script> 
+
+
+<div class="row"> 
+  <div class="column">
+    <img alt ="image1" src="photos_tab/s1.jpg" style="width:100%"/>
+    <img alt="image2" src="photos_tab/s2.jpg" style="width:100%"/>
+    <img alt="image3" src="photos_tab/s3.jpg" style="width:100%"/>
+    <img alt="image4" src="photos_tab/s4.jpg" style="width:100%"/>
+    <img alt="image5" src="photos_tab/s5.jpg" style="width:100%"/>
+  </div>
+  
+  <div class="column">
+    <img alt="image6" src="photos_tab/s6.jpg" style="width:100%"/>
+    <img alt="image7" src="photos_tab/s7.jpg" style="width:100%"/>
+    <img alt="image8" src="photos_tab/s8.jpg" style="width:100%"/>
+    <img alt="image9" src="photos_tab/s9.jpg" style="width:100%"/>
+    <img alt="image10" src="photos_tab/s10.jpg" style="width:100%"/>
+  </div>  
+  
+  <div class="column">
+    <img alt="image11" src="photos_tab/s11.jpg" style="width:100%"/>
+    <img alt="image12" src="photos_tab/s12.jpg" style="width:100%"/>
+    <img alt="image13" src="photos_tab/s13.jpg" style="width:100%"/>
+    <img alt="image14" src="photos_tab/s14.jpg" style="width:100%"/>
+    <img alt="image15" src="photos_tab/s15.jpg" style="width:100%"/>
+  </div>
+  
+  <div class="column">
+    <img alt="image16" src="photos_tab/s16.jpg" style="width:100%"/>
+    <img alt="image17" src="photos_tab/s17.jpg" style="width:100%"/>
+    <img alt="image18" src="photos_tab/s18.jpg" style="width:100%"/>
+    <img alt="image19" src="photos_tab/s19.jpg" style="width:100%"/>
+    <img alt="image20" src="photos_tab/s20.jpg" style="width:100%"/>
+  </div>
+</div>
+
+<br/>
+
+<div style="background-color:gray;height:30px;bottom:500px"></div>
+<div class="footer"> 
+<center><span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px ; color:white">Asia Pacific University</span> <br/>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Address: Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur,<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white"> Wilayah Persekutuan Kuala Lumpur<br/></span>
+<span style="font-family:Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; padding:0px 0px 0px 0px; color:white">Phone: 03-8996 1000<br/></span>
+<img src="apu_taekwondo_logo_360.png" alt="image"/></center>
+</div>
+
+
+</body>
+</html>
